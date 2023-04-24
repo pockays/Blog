@@ -16,6 +16,7 @@ export default defineConfig({
       dts: "src/types/auto-imports.d.ts",
     }),
     Components({
+      dirs: ['src/components', 'src/views'],
       resolvers: [NaiveUiResolver()],
       dts: "src/types/components.d.ts",
     }),
@@ -59,11 +60,12 @@ export default defineConfig({
     // https://cn.vitejs.dev/config/#resolve-extensions
     extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".vue"],
   },
+  
   server: {
     open: true,
     proxy: {
       "/api": {
-        target: "http://localhost:8080",
+        target: "http://localhost:7777",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },

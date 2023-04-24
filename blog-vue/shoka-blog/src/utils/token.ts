@@ -14,9 +14,9 @@ export function getToken() {
 
 // 本地运行记得删除domain
 export function setToken(token: string) {
-  return Cookies.set(TokenKey, token, { domain: domain });
+  return Cookies.set(TokenKey, token);  // Cookies.set(TokenKey, token, { domain: domain });
 }
 
 export function removeToken() {
-  return Cookies.remove(TokenKey, { domain: domain });
+  return Cookies.remove(TokenKey);    //return Cookies.remove(TokenKey, { domain: domain });
 }

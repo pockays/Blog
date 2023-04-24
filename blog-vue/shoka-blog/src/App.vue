@@ -1,6 +1,8 @@
 <template>
   <Provider>
-    <div class="app-wrapper">
+    <div class="app-wrapper" @click.right="mouseclick(ovarPlay)" @contextmenu.prevent>
+      <sakura v-show="blog.isShow"></sakura>
+      <Overplay v-show="ovarPlay"></Overplay>
       <Header></Header>
       <main class="main-wrapper">
         <router-view v-slot="{ Component, route }">
@@ -26,9 +28,15 @@
 import { getBlogInfo, report } from "@/api/blogInfo";
 import useStore from '@/store';
 const { blog } = useStore();
+const ovarPlay = ref(false);
+
+const mouseclick=(o: boolean)=>{
+    ovarPlay.value=!o
+};
+
 onMounted(() => {
   console.log(
-    "%c Hello World %c By 阿冬 %c",
+    "%c Welcome %c By liuris %c",
     "background:#e9546b ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff; padding:5px 0;",
     "background:#ec8c69 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #000; padding:5px 0;",
     "background:transparent"

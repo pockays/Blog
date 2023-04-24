@@ -6,11 +6,15 @@ const useBlogStore = defineStore("useBlogStore", {
     blogInfo: {
       siteConfig: {} as SiteConfig,
     } as BlogInfo,
+    isShow:true as boolean,
   }),
   actions: {
     setBlogInfo(blogInfo: BlogInfo) {
       this.blogInfo = blogInfo;
     },
+    setIsShow(isShow: boolean){
+     this.isShow=!isShow;
+    }
   },
   getters: {},
   persist: {

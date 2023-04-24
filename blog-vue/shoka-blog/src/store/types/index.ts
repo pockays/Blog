@@ -96,4 +96,5 @@ export interface BlogState {
    * 博客信息
    */
   blogInfo: BlogInfo;
+  isShow:boolean;
 }

@@ -10,6 +10,9 @@
         <svg-icon style="cursor: pointer;" :icon-class="isDark ? 'moon' : 'sun'" @click="toggle()"></svg-icon>
       </li>
       <li class="item">
+        <svg-icon style="cursor: pointer; " icon-class="skip"  @click="blog.setIsShow(blog.isShow)"></svg-icon>
+      </li>
+      <li class="item">
         <svg-icon style="cursor: pointer;" icon-class="search" @click="app.searchFlag = true"></svg-icon>
       </li>
     </ul>
@@ -20,6 +23,7 @@
 import useStore from "@/store";
 import { useDark, useScroll } from "@vueuse/core";
 import { useToggle } from '@vueuse/shared';
+const { blog } = useStore();
 const { app } = useStore();
 const { y } = useScroll(window);
 const isDark = useDark({

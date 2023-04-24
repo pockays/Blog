@@ -79,7 +79,7 @@ public class SiteConfigServiceImpl extends ServiceImpl<SiteConfigMapper, SiteCon
                         .fileName(md5)
                         .filePath(CONFIG.getFilePath())
                         .extendName(extName)
-                        .fileSize((int) file.getSize())
+                        .fileSize((int) file.getSize()) 
                         .isDir(FALSE)
                         .build();
                 blogFileMapper.insert(newFile);
