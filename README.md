@@ -1,9 +1,7 @@
 ## 博客介绍
 
 <p align="center">
-  <a href="https://www.ttkwsd.top">
-    <img src="https://i.328888.xyz/2023/04/24/ioyaxc.png" alt="liuris的个人博客" style="border-radius: 50%;">
-  </a>
+    <img src="https://i.328888.xyz/2023/04/24/ioyaxc.th.png" alt="liuris的个人博客" style="border-radius: 50%;">
 </p>
 
 <p align="center">
