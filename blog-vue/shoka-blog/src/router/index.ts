@@ -116,6 +116,14 @@ const routes: RouteRecordRaw[] = [
     path: "/oauth/login/github",
     component: () => import("@/components/Oauth/index.vue"),
   },
+  {
+    path: "/login",
+    component: () => import("@/views/MyLogin/LoginRegister.vue"),
+  },
+  {
+    path: "/forgetpassword",
+    component: () => import("@/views/ForgetPassword/ForgetPassword.vue"),
+  },
   { path: "/:catchAll(.*)", redirect: "/404" },
 ];
 

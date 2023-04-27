@@ -37,7 +37,7 @@ const data = reactive({
     password: "",
     code: "",
   } as UserForm,
-});
+});                     
 const { timer, flag, loading, registerForm } = toRefs(data);
 const { pause, resume } = useIntervalFn(() => {
   timer.value--;

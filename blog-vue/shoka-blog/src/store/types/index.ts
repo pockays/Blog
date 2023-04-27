@@ -97,4 +97,5 @@ export interface BlogState {
    */
   blogInfo: BlogInfo;
   isShow:boolean;
+  bgUrl:string;
 }

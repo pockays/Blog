@@ -13,6 +13,9 @@
         <svg-icon style="cursor: pointer; " icon-class="skip"  @click="blog.setIsShow(blog.isShow)"></svg-icon>
       </li>
       <li class="item">
+        <svg-icon style="cursor: pointer; " icon-class="bgChange"  @click="switchSkip"></svg-icon>
+      </li>
+      <li class="item">
         <svg-icon style="cursor: pointer;" icon-class="search" @click="app.searchFlag = true"></svg-icon>
       </li>
     </ul>
@@ -34,6 +37,16 @@ const isDark = useDark({
 })
 const toggle = useToggle(isDark);
 const fixedClass = ref("");
+const i = ref(0)
+const switchSkip = ()=>{
+      const myCars = ["src/assets/images/3.jpg", "src/assets/images/234.jpg", "src/assets/images/3123.jpg"];
+      i.value++
+      blog.setBgUrl(myCars[i.value])
+      console.log(blog.bgUrl)
+      if (i.value == myCars.length - 1) {
+          i.value = -1;
+      }
+    }
 watch(y, (newValue, oldValue) => {
   if (newValue > 0) {
     if (newValue < oldValue) {

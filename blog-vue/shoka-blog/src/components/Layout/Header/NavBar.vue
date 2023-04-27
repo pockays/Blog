@@ -24,9 +24,15 @@
       </div>
     </template>
     <div class="menu-item">
-      <a v-if="!user.id" @click="app.loginFlag = true" class="menu-btn">
-        <svg-icon icon-class="user"></svg-icon> 登录
+      <div v-if="!user.id">
+      <a  @click="app.loginFlag = true" class="menu-btn">
+        <svg-icon icon-class="user"></svg-icon> 登录Ⅰ
       </a>
+      <a  @click="handlelogin()" class="menu-btn">
+        <svg-icon icon-class="user"></svg-icon> 登录Ⅱ
+      </a>
+    </div>
+
       <template v-else>
         <img class="user-avatar drop" :src="user.avatar" />
         <ul class="submenu">
@@ -115,13 +121,16 @@ const logout = () => {
   user.LogOut();
   window.$message?.success("退出成功");
 };
+    const handlelogin = ()=>{
+      user.savePath(route.path)
+      router.push('/login')
+    }
 </script>
 
 <style lang="scss" scoped>
 .user-avatar {
   display: inline-block;
   position: relative;
-  top: 0.3rem;
   width: 24px;
   height: 24px;
   border-radius: 50%;

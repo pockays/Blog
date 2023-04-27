@@ -64,3 +64,9 @@ export interface UserForm {
    */
   code: string;
 }
+
+export const forgetForm = ref<UserForm>({
+  username: "",
+  password: "",
+  code:""
+});

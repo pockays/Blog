@@ -24,6 +24,8 @@ import "swiper/css/pagination";
 import VueViewer from "v-viewer";
 import "viewerjs/dist/viewer.css";
 import "virtual:svg-icons-register";
+import 'element-plus/dist/index.css'
+import ElementPlus from 'element-plus'
 
 import { createApp, Directive } from "vue";
 import lazyPlugin from "vue3-lazy";
@@ -31,6 +33,7 @@ import App from "./App.vue";
 import error from "./assets/images/404.gif";
 import loading from "./assets/images/loading.gif";
 const app = createApp(App);
+app.use(ElementPlus)
 Object.keys(directive).forEach((key) => {
   app.directive(key, (directive as { [key: string]: Directive })[key]);
 });
