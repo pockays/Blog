@@ -54,7 +54,11 @@ export default{
   timer: 0,
   flag: false,
   loading: false,
-  forgetForm,
+  forgetForm: {
+    username: "",
+    password: "",
+    code: "",
+  },
 });
 const router =useRouter()
 const forgetpassword=ref()
