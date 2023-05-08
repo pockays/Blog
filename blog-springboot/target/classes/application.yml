@@ -1,6 +1,6 @@
 server:
   # 端口
-  port: 7777
+  port: 8080
 spring:
   mvc:
     pathmatch:
@@ -52,7 +52,7 @@ spring:
     # Redis服务器连接端口
     port: 6379
     # Redis服务器连接密码（默认为空）
-    password:
+    password: 
     # 连接超时时间
     timeout: 10s
     lettuce:
@@ -83,9 +83,9 @@ spring:
   mail:
     host: smtp.qq.com
     # 用户名
-    username: 邮箱号
+    username: 1159419473@qq.com
     # 授权码
-    password: 邮箱授权码
+    password: ekaemlvvcbjjbabd
 # 博客链接 域名后面要加/
 blog:
   url: 博客域名或ip
@@ -101,19 +101,19 @@ search:
   mode: elasticsearch
 # 文件上传策略 local、oss、cos
 upload:
-  strategy: local
+  strategy: qioss
   local:
     # nginx映射本地文件路径
     url: https://你的文件上传子域名
     # 本地文件存储路径
     path: /usr/local/upload
-  # oss存储
+  # 阿里云oss存储
   oss:
-    url: http://Bucket域名
+    url: http://rsj6jcall.bkt.clouddn.com/
     endpoint: OSS配置endpoint
-    bucketName: OSS配置bucketName
-    accessKeyId: OSS配置accessKeyId
-    accesskeySecret: OSS配置accesskeySecret
+    bucketName: liuris
+    accessKeyId: peZW-moPPxVqGgQSRyMKhclumFpQpznKTqWc5tHW
+    accesskeySecret: X7VHxbXqwfaS4n_LwPAyGDpvENm_zmL9fd92mEj1
   # cos存储
   cos:
     url: https://Bucket域名
@@ -121,6 +121,13 @@ upload:
     secretKey: COS配置secretKey
     region: COS配置region
     bucketName: COS配置bucketName
+  #七牛云oss存储
+  qioss:
+    baseurl: http://rsj6jcall.bkt.clouddn.com/
+    accessKey: peZW-moPPxVqGgQSRyMKhclumFpQpznKTqWc5tHW
+    secretKey: X7VHxbXqwfaS4n_LwPAyGDpvENm_zmL9fd92mEj1
+    bucket: liuris
+
 # mybatisPlus配置
 mybatis-plus:
   # mapper映射地址
@@ -140,7 +147,7 @@ mybatis-plus:
 elasticsearch:
   # elasticsearch用户名 这个不用改
   username: elastic
-  password: elasticsearch密码
+  password: 123456
   hostname: 你的ip
   port: 9200
   scheme: http

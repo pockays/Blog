@@ -29,6 +29,11 @@
       "name": "upload.oss",
       "type": "com.ican.config.properties.OssProperties",
       "sourceType": "com.ican.config.properties.OssProperties"
+    },
+    {
+      "name": "upload.qioss",
+      "type": "com.ican.config.properties.QiOssProperties",
+      "sourceType": "com.ican.config.properties.QiOssProperties"
     }
   ],
   "properties": [
@@ -199,6 +204,30 @@
       "type": "java.lang.String",
       "description": "oss域名",
       "sourceType": "com.ican.config.properties.OssProperties"
+    },
+    {
+      "name": "upload.qioss.access-key",
+      "type": "java.lang.String",
+      "description": "访问密钥id",
+      "sourceType": "com.ican.config.properties.QiOssProperties"
+    },
+    {
+      "name": "upload.qioss.baseurl",
+      "type": "java.lang.String",
+      "description": "oss域名",
+      "sourceType": "com.ican.config.properties.QiOssProperties"
+    },
+    {
+      "name": "upload.qioss.bucket",
+      "type": "java.lang.String",
+      "description": "bucket名称",
+      "sourceType": "com.ican.config.properties.QiOssProperties"
+    },
+    {
+      "name": "upload.qioss.secret-key",
+      "type": "java.lang.String",
+      "description": "访问密钥密码",
+      "sourceType": "com.ican.config.properties.QiOssProperties"
     }
   ],
   "hints": []

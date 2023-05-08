@@ -25,7 +25,11 @@ public enum UploadModeEnum {
     /**
      * cos
      */
-    COS("cos", "cosUploadStrategyImpl");
+    COS("cos", "cosUploadStrategyImpl"),
+    /**
+     * qioss
+     */
+    QIOSS("qioss", "qiOssUploadStrategyImpl");
 
     /**
      * 模式
