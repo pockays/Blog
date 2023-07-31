@@ -215,7 +215,7 @@
   <style scoped>
   #page {
     position: fixed;
-
+    pointer-events:none;
   }
   </style>
   
