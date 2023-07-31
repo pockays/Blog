@@ -107,6 +107,10 @@ export interface SiteConfig {
    */
   isMusic: number;
   /**
+   * 鼠标光标
+   */
+  cursorUrl: string;
+  /**
    * 网易云歌单id
    */
   musicId: string;

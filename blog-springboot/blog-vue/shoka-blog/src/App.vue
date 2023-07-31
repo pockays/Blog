@@ -1,9 +1,9 @@
 <template>
   <Provider>
-    <div class="app-wrapper" @click.right="mouseclick(ovarPlay)" @contextmenu.prevent>
+    <div class="app-wrapper" @click.right="mouseclick(ovarPlay)" @contextmenu.prevent :style="{cursor: 'url(' + blog.blogInfo.siteConfig.cursorUrl + '), default'}">
       <sakura v-show="blog.isShow"></sakura>
       <Overplay v-show="ovarPlay"></Overplay>
-      <Header></Header>
+      <Header></Header> 
       <main class="main-wrapper">
         <router-view v-slot="{ Component, route }">
           <keep-alive>
@@ -54,6 +54,7 @@ onMounted(() => {
   min-height: 100vh;
 
 }
+
 
 .main-wrapper {
   display: flex;

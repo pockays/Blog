@@ -23,7 +23,7 @@
         </el-form>
         <!--  底部  -->
         <div class="el-login-footer">
-            <span>Copyright © 2022 - {{ new Date().getFullYear() }} By 阿冬</span>
+            <span>Copyright © 2022 - {{ new Date().getFullYear() }} By liurs</span>
         </div>
     </div>
 </template>
@@ -67,7 +67,7 @@ const handleLogin = async (formEl: FormInstance | undefined) => {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-image: url("https://static.ttkwsd.top/config/0d7d8d691e644989b72ddda5f695aca2.jpg");
+    background-image: url("https://img.liuris.fun//background/isjCtL.png");
     background-size: cover;
 }
 

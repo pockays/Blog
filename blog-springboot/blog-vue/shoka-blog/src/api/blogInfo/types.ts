@@ -102,6 +102,10 @@ export interface SiteConfig {
    * 是否开启音乐播放器 (0否 1是)
    */
   isMusic: number;
+ /**
+   * 光标设置
+   */
+  cursorUrl:string;
   /**
    * 网易云歌单id
    */

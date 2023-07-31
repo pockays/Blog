@@ -34,7 +34,7 @@
       },
       initSakura() {
         const img = new Image();
-        img.src = 'src/assets/images/sakura.png'; //图片路径使用require才能获取
+        img.src = '/sakura.png'; //图片路径使用require才能获取
         // 绘制樱花
         const _this = this;
         Sakura.prototype.draw = function(cxt) {
@@ -215,7 +215,7 @@
   <style scoped>
   #page {
     position: fixed;
-
+    pointer-events:none;
   }
   </style>
   

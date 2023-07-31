@@ -12,12 +12,12 @@
 <script setup lang="ts">
 
 const imageList = [
-  "https://i.328888.xyz/2023/04/23/i5PaPq.jpeg",
+  "http://img.liuris.fun//background/3.jpg",
   "https://static.ttkwsd.top/articles/379ce4b2ddf4b087441c196fbffa2f3b.jpg",
   "https://static.ttkwsd.top/articles/80ae8255603788a1305d4bcc177097a2.jpg",
   "https://static.ttkwsd.top/articles/6becdfb5062ec2e1f9b9b16dd4b65d7e.jpg",
-  "https://i.328888.xyz/2023/04/23/i5PQWz.png",
-  "https://i.328888.xyz/2023/04/23/i5PYpw.jpeg"
+  "http://img.liuris.fun//background/2.png",
+  "http://img.liuris.fun//background/3.jpg"
 ]
 </script>
 

@@ -39,7 +39,7 @@ const toggle = useToggle(isDark);
 const fixedClass = ref("");
 const i = ref(0)
 const switchSkip = ()=>{
-      const myCars = ["src/assets/images/3.jpg", "src/assets/images/234.jpg", "src/assets/images/3123.jpg"];
+      const myCars = ["/3.jpg", "/234.jpg", "/3123.jpg","/2.jpg"];
       i.value++
       blog.setBgUrl(myCars[i.value])
       console.log(blog.bgUrl)

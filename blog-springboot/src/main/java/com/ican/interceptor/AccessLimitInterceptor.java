@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Slf4j
 @Component
-public class AccessLimitInterceptor implements HandlerInterceptor {
+public class  AccessLimitInterceptor implements HandlerInterceptor {
 
     @Autowired
     private RedisService redisService;

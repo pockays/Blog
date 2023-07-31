@@ -7,7 +7,7 @@ const useBlogStore = defineStore("useBlogStore", {
       siteConfig: {} as SiteConfig,
     } as BlogInfo,
     isShow:true as boolean,
-    bgUrl:"src/assets/images/3.jpg" as string,
+    bgUrl:"/3.jpg" as string,
   }),
   actions: {
     setBlogInfo(blogInfo: BlogInfo) {

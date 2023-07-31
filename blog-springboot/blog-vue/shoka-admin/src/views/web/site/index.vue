@@ -230,6 +230,9 @@
                             <el-radio :label="1">开启</el-radio>
                         </el-radio-group>
                     </el-form-item>
+                    <el-form-item label="鼠标光标">
+                        <el-input v-model="siteConfig.cursorUrl" style="width: 400px;" placeholder="尺寸请小于32x32"></el-input>
+                    </el-form-item>
                     <el-form-item label="网易云歌单Id" v-if="siteConfig.isMusic == 1">
                         <el-input v-model="siteConfig.musicId" style="width: 400px;"></el-input>
                     </el-form-item>

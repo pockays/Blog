@@ -148,6 +148,11 @@ public class SiteConfig {
     private Integer isMusic;
 
     /**
+     * 鼠标光标
+     */
+    private  String cursorUrl;
+
+    /**
      * 网易云歌单id
      */
     private String musicId;
